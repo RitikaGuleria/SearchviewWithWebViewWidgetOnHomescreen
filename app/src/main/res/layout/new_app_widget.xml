@@ -1,0 +1,36 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Widget.WidgetOfSearchviewOnHomescreen.AppWidget.Container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:theme="@style/Theme.WidgetOfSearchviewOnHomescreen.AppWidgetContainer">
+
+    <SearchView
+        android:id="@+id/searchview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:queryHint="Search"
+        android:layout_margin="8dp"
+        android:elevation="41dp"
+        android:textColor="@color/material_dynamic_neutral60"
+        android:background="@drawable/search_shape"
+        android:queryBackground="@color/white"
+        >
+
+    </SearchView>
+
+    <WebView
+        android:id="@+id/webview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/searchview"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="143dp"
+        android:layout_marginTop="134dp"
+        android:layout_marginEnd="193dp"
+        android:layout_marginBottom="481dp">
+
+    </WebView>
+
+</RelativeLayout>
